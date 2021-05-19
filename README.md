@@ -8,7 +8,7 @@ Things you may want to cover:
  Vending Machine is a sample application that allows to insert the coin and get back the desired drinks.
  The drinks at the vending machine can be purchased and refunded.
 
-This is  built with [NodeJS]](https://nodejs.org/) and [React.js](https://reactjs.org/) 
+This is  built with [NodeJS](https://nodejs.org/) and [React.js](https://reactjs.org/) 
 
 ## Built with
 

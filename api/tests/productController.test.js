@@ -9,10 +9,10 @@ const {
 
 describe('Product Purchage Endpoints', () => {
   let sampleProduct = {}
-  afterAll(() => {
+  beforeAll(() => {
     const res = fs.readFileSync(DATA_FILE);
     let data = JSON.parse(res);
-    sampleProduct = data.product[0]
+    sampleProduct = data.products[0]
   })
 
   it('should not refund if not purchased', async () => {
