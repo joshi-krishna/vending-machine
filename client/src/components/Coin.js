@@ -56,7 +56,7 @@ const Coin = (props) => {
 
   const onReset = (money = 0) => {
     setTotal(money);
-    props.sendCoin(props.sendCoin(money));
+    props.sendCoin(money);
   }
 
   return (
