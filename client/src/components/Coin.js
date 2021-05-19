@@ -39,10 +39,10 @@ const useStyles = makeStyles((theme) => ({
 const Coin = (props) => {
   let newTotal = 0;
   const classes = useStyles();
-  let [coins] = useState([1, 2, 5, 6, 8, 10, 15, 18])
+  let [coins] = useState([1, 2, 5, 6, 8, 10, 15, 18]);
   let [total, setTotal] = useState(0);
 
-  if (props.returnedMoney && props.returnedMoney != total) {
+  if (props.returnedMoney != total) {
     setTotal(props.returnedMoney);
     props.sendCoin(props.returnedMoney);
   }
@@ -65,8 +65,8 @@ const Coin = (props) => {
         <Available money={total} reset={onReset} />
       </Grid>
       <Card className={classes.coin}>
-        {coins.map((coin) => {
-          return <Link href="#" onClick={(e) => setMoney(e, coin)} >
+        {coins.map((coin, index) => {
+          return <Link href="#" onClick={(e) => setMoney(e, coin)} key={index} >
             <Avatar key={coin} className={classes.orange}>{coin}</Avatar>
           </Link>
         })}

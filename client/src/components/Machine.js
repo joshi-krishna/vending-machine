@@ -45,7 +45,7 @@ const Machine = () => {
   }, [])
 
   const setCoins = (inputCoin) => {
-    setReturnedMoney(0);
+    setReturnedMoney(inputCoin || 0);
     setInputCoin(inputCoin);
   }
 

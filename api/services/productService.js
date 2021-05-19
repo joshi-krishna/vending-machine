@@ -46,7 +46,7 @@ const ProductService = (() => {
       let data = JSON.parse(res);
       let product = data.products.find(x => x.id == id);
       if (product.stock == 10)
-        return { message: `${MESSAGE_NOT_PURCHASED} ${product.name}`, stock: product.stock, returnedMoney: 0 };
+        return { message: `${MESSAGE_NOT_PURCHASED} ${product.name}`, stock: null, returnedMoney: 0 };
       product.stock = product.stock + 1;
       writeDataFile(data, product);
       return { message: `${MESSAGE_REFUND_SUCCESS} ${product.name}`, stock: product.stock, returnedMoney: product.price };

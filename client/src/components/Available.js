@@ -15,7 +15,7 @@ const Available = ({ money, reset }) => {
         <Typography variant='h5' gutterBottom color='primary'>
           {money}
         </Typography>
-        <Button color='Default' onClick={() => reset(0)} variant='contained'> Reset Money</Button>
+        <Button color='default' onClick={() => reset(0)} variant='contained'> Reset Money</Button>
       </CardContent>
     </Card>
   )

@@ -1,1 +1,26 @@
-{"products":[{"id":1,"name":"Pepsi","price":25,"stock":10,"imgUrl":"https://st.depositphotos.com/1790678/1365/i/600/depositphotos_13658020-stock-photo-pepsi-cola.jpg"},{"id":2,"name":"Coke","price":20,"stock":10,"imgUrl":"https://pyxis.nymag.com/v1/imgs/3bb/38c/f22ac5d8948918efd1fc37904212241193-28-coke-mini-can.2x.h473.w710.jpg"},{"id":3,"name":"Dew","price":30,"stock":10,"imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRscbhJXu_cuZLgxFJWjDAVHEsJrnV1JOtDbA&usqp=CAU"}],"coinAmount":100}
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Pepsi",
+      "price": 25,
+      "stock":10,
+      "imgUrl": "https://st.depositphotos.com/1790678/1365/i/600/depositphotos_13658020-stock-photo-pepsi-cola.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Coke",
+      "price": 20,
+      "stock": 10,
+      "imgUrl": "https://pyxis.nymag.com/v1/imgs/3bb/38c/f22ac5d8948918efd1fc37904212241193-28-coke-mini-can.2x.h473.w710.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Dew",
+      "price": 30,
+      "stock": 10,
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRscbhJXu_cuZLgxFJWjDAVHEsJrnV1JOtDbA&usqp=CAU"
+    }
+  ],
+  "coinAmount": 100
+}
