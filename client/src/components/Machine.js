@@ -24,7 +24,7 @@ const useStyles = makeStyles(theme => ({
   },
   btn: {
     '& > *': {
-      margin: theme.spacing(2),
+      margin: theme.spacing(2)
     }
   },
 }))
@@ -64,7 +64,6 @@ const Machine = () => {
       alert.error(error.message);
     }
   }
-
 
   const refundItem = async (product) => {
     try {

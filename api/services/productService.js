@@ -66,7 +66,7 @@ const ProductService = (() => {
   };
 
   const findIndex = (collection, id) => {
-    for (var i = 0; i < collection.length; i++) {
+    for (let i = 0; i < collection.length; i++) {
       if (collection[i].id === id) {
         return i;
       }
