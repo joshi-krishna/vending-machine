@@ -63,4 +63,4 @@ On the command line, navigate (cd) to the **vending-machine/api** folder and run
 npm test
 ```
 
-**Note:**  *I have not used json file to store data.*
+**Note:**  *I have used json file to store data.*
