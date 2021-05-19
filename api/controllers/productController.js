@@ -11,4 +11,20 @@ router.get('/', (req, res) => {
   })
 })
 
+router.get('/:id', (req, res) => {
+  productService.purchageProduct(req.params.id, req.query.coin).then((product) => {
+    httpRespsonse.success(res, product);
+  }).catch((error) => {
+    httpRespsonse.error(res, error);
+  })
+})
+
+router.post('/:id', (req, res) => {
+  productService.refundProduct(req.params.id, req.body).then((coin) => {
+    httpRespsonse.success(res, coin);
+  }).catch((error) => {
+    httpRespsonse.error(res, error);
+  })
+})
+
 module.exports = router;
